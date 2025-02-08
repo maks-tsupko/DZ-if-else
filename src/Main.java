@@ -2,9 +2,11 @@ public class Main {
     public static void main(String[] args) {
         // задача 1
         System.out.println("задача 1");
-        int age = 19;
+        int age = 17;
         if (age >= 18) {
-            System.out.println("Если возраст человека равен " + age + " , то он совершеннолетний");
+            System.out.println("Если возраст человека равен " + age + " , то он совершеннолетний.");
+        } else {
+            System.out.println("Если возвраст человека равен " + age + " , то он не достиг совершеннолетия, нужно немного подождать.");
         }
         //задача 2
         System.out.println("задача 2");
@@ -24,7 +26,7 @@ public class Main {
         }
         // задача 4
         System.out.println("задача 4");
-        int ageHuman = 23;
+        int ageHuman = 27;
         if (ageHuman >= 2 && ageHuman <= 6) {
             System.out.println("Если возраст человека равен " + ageHuman + " , то ему нужно ходить в детский сад.");
         }
@@ -34,13 +36,16 @@ public class Main {
         if (ageHuman >= 18 && ageHuman <= 24) {
             System.out.println("Если возраст человека равен " + ageHuman + " , то ему нужно ходить в университет.");
         }
+        if ( ageHuman > 24) {
+            System.out.println("Если возвраст человека равен " + ageHuman + " , то ему пора ходить на работу.");
+        }
         // задача 5
         System.out.println("задача 5");
-        int ageChildren = 13;
+        int ageChildren = 15;
         if (ageChildren < 5) {
             System.out.println("Если возраст равен " + ageChildren + " нельзя кататься на аттракционе");
         }
-        if (ageChildren > 5 && ageChildren < 14) {
+        if (ageChildren >= 5 && ageChildren <= 14) {
             System.out.println("Если возраст равен " + ageChildren + " можно кататься в сопровождении взрослого");
         }
         if (ageChildren > 14) {
@@ -63,11 +68,11 @@ public class Main {
         int two = 2;
         int three = 3;
         if (one > two && one > three) {
-            System.out.println("Число больше остальных");
+            System.out.println("Число " + one + " меньше числа " + two + " и меньше числа " + three);
         } else if (two > one && two > three) {
-            System.out.println("Число two больше остальных");
+            System.out.println("Число " + two + "  больше " + one + " , но меньше числа " + three);
         } else {
-            System.out.println("Число three больше остальных");
+            System.out.println("Число " + three + " больше числа " + one + " и числа " + two);
         }
 
 
